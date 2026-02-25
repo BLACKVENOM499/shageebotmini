@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
-    "@whiskeysockets/baileys": "github:yagamidxd/baileys"
+    "@whiskeysockets/baileys": "github:yagamidxd/baileys",
     "express-session": "^1.18.2",
     "adm-zip": "^0.5.16",
     "axios": "^1.2.5",
