@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^20.0.2",
-    "@whiskeysockets/baileys": "^1.0.8",
+    "@whiskeysockets/baileys": "1.0.8",
     "express-session": "^1.18.2",
     "adm-zip": "^0.5.16",
     "axios": "^1.2.5",
