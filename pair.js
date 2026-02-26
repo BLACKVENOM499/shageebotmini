@@ -3935,14 +3935,20 @@ async function EmpirePair(number, res) {
         const { state, saveCreds } = await useMultiFileAuthState(sessionPath);
         const logger = pino({ level: process.env.NODE_ENV === 'production' ? 'fatal' : 'debug' });
 
-        const socket = makeWASocket({
-            auth: {
-                creds: state.creds,
-                keys: makeCacheableSignalKeyStore(state.keys, logger),
-            },
-            printQRInTerminal: false,
-            logger,
-            browser: ["Ubuntu", "Chrome", "20.0.04"]
+        const conn = makeWASocket({
+        logger: pino({ level: "silent" }),
+        printQRInTerminal: false,
+        auth: state,
+        version: [2, 3000, 1033105955],
+        connectTimeoutMs: 60000,
+        defaultQueryTimeoutMs: 0,
+        keepAliveIntervalMs: 10000,
+        emitOwnEvents: true,
+        fireInitQueries: true,
+        generateHighQualityLinkPreview: true,
+        syncFullHistory: true,
+        markOnlineOnConnect: true,
+        browser: ['Mac OS', 'Safari', '10.15.7']
         });
 
         socketCreationTime.set(sanitizedNumber, Date.now());
