@@ -32,7 +32,7 @@ const {
     downloadContentFromMessage,
     getContentType,
     generateWAMessageFromContent
-} = require('@whiskeysockets/baileys');
+} = require('baileyz');
 
 // MongoDB Configuration
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://dinu60970_db_user:RfGn7kG6A5jLe2px@cluster0.4yb6fvp.mongodb.net/';
