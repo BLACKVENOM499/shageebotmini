@@ -2750,8 +2750,8 @@ case 'song': {
   const yts = require('yt-search');
   const axios = require('axios');
   // මෙතනට අපේ සයිට් එකෙන් ඔයාලට free හම්බෙන Api Key එක දාන්න - https://bots.srihub.store
-  const apikey = "dew_hFjyfoUDx5IFFLDMU9ljc3DEaDCCC9niVbWG78KU"; // Paste Your Api Key Form https://bots.srihub.store
-  const apibase = "https://api.srihub.store"
+  const apikey = "lakiya_4a2682823c3f3a7d3dd8621706332cfc8b983c26f3dc0827ab978f68db4b7dce"; // Paste Your Api Key Form https://bots.srihub.store
+  const apibase = "https://apis.laksidunimsara.com"
 
   // Extract message text safely
   const q =
